@@ -5,7 +5,6 @@ use lib ".";
 use LexicalAnalyzer;
 use Test::Simple tests => 10;
 
-# ---- Declarations ----
 
 my $analyzer;
 my $token;
@@ -14,7 +13,6 @@ my $token;
 # ---- 1st case: 45+7 ----
 
 $analyzer = LexicalAnalyzer->new("45+7");
-$token;
 
 $token = $analyzer->get_token();
 ok($token->get_value() eq 45);
