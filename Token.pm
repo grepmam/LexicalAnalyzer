@@ -61,7 +61,7 @@ sub to_string {
 
     my $self = shift;
 
-    return qq|Token($self->{_type}, $self->{_value}, $self->{_position})|;
+    sprintf("Token(%s, %s, %d)", $self->{_type}, $self->{_value}, $self->{_position});
 
 }
 
